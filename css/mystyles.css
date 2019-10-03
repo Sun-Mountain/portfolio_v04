@@ -4,14 +4,16 @@
   --secondary-color: #536390;
   --font-color: #444444;
   --bg-color: #fff;
-  --heading-color: #292922; }
+  --heading-color: #292922;
+  --card-border: #161625; }
 
 [data-theme="dark"] {
   --primary-color: #9A97F3;
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   --bg-color: #161625;
-  --heading-color: #818cab; }
+  --heading-color: #818cab;
+  --card-border: #fff; }
 
 body {
   background-color: var(--bg-color);
@@ -74,11 +76,11 @@ main {
 
 /* cards */
 .card {
-  background-color: #161625;
-  border: 1px solid #161625;
+  background-color: var(--card-border);
+  border: 1px solid var(--card-border);
   border-radius: 25px;
   display: inline-block;
-  width: 250px; }
+  width: 225px; }
   .card .card-description {
     border-radius: 25px 25px 0 0;
     color: #fff;
@@ -99,9 +101,21 @@ main {
       margin: 12px 12px 0; }
   .card #ruby-blog {
     background-color: #87153B; }
+  .card .proj-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0;
+    width: 75%; }
+    .card .proj-links img {
+      max-width: 30px;
+      height: auto; }
+    .card .proj-links a {
+      width: 22%; }
+    .card .proj-links a:hover {
+      opacity: 0.5; }
   .card .card-image img {
     border-radius: 0 0 25px 25px;
-    max-width: 250px;
+    max-width: 225px;
     max-height: 250px; }
 
 /* slider switch css */
