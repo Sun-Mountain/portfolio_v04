@@ -74,9 +74,11 @@ main {
 
 /* cards */
 .card {
+  background-color: #161625;
+  border: 1px solid #161625;
   border-radius: 25px;
   display: inline-block;
-  width: 200px; }
+  width: 250px; }
   .card .card-description {
     border-radius: 25px 25px 0 0;
     color: #fff;
@@ -92,8 +94,15 @@ main {
       font-style: italic;
       margin: 0;
       text-align: center; }
+    .card .card-description .proj-desc {
+      font-size: 12px;
+      margin: 12px 12px 0; }
   .card #ruby-blog {
     background-color: #87153B; }
+  .card .card-image img {
+    border-radius: 0 0 25px 25px;
+    max-width: 250px;
+    max-height: 250px; }
 
 /* slider switch css */
 .theme-switch-wrapper {
