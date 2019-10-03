@@ -93,7 +93,7 @@ main {
     width: 225px;
 
     .card-description {
-        border-radius: 25px 25px 0 0;
+        border-radius: 0 0 25px 25px;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -119,12 +119,17 @@ main {
         .proj-desc {
             font-size: 12px;
             margin: 12px 12px 0;
+            height: 200px;
             overflow: hidden;
         }
     }
 
     #circuitapp {
         background-color: #0f223a;
+    }
+
+    #hanoi {
+        background-color: #e91e63;
     }
 
     #ptflash {
@@ -157,7 +162,7 @@ main {
 
     .card-image {
         img {
-            border-radius: 0 0 25px 25px;
+            border-radius: 25px 25px 0 0;
             max-width: 225px;
             max-height: 250px;
         }
@@ -178,7 +183,7 @@ main {
 
 .theme-switch {
     display: inline-block;
-    height: 20px;
+    height: 18px;
     margin: 8px 0 0;
     position: relative;
     width: 40px;
@@ -201,9 +206,9 @@ main {
 
 .slider:before {
     background-color: #fff;
-    bottom: 2px;
+    bottom: 1px;
     content: "";
-    height: 18px;
+    height: 17px;
     left: 2px;
     position: absolute;
     transition: .4s;
@@ -215,7 +220,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(18px);
 }
 
 .slider.round {

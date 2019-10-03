@@ -82,7 +82,7 @@ main {
   margin: 25px 12px 0;
   width: 225px; }
   .card .card-description {
-    border-radius: 25px 25px 0 0;
+    border-radius: 0 0 25px 25px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -103,9 +103,12 @@ main {
     .card .card-description .proj-desc {
       font-size: 12px;
       margin: 12px 12px 0;
+      height: 200px;
       overflow: hidden; }
   .card #circuitapp {
     background-color: #0f223a; }
+  .card #hanoi {
+    background-color: #e91e63; }
   .card #ptflash {
     background-color: #53B8C0; }
   .card #ruby-blog {
@@ -123,7 +126,7 @@ main {
     .card .proj-links a:hover {
       opacity: 0.5; }
   .card .card-image img {
-    border-radius: 0 0 25px 25px;
+    border-radius: 25px 25px 0 0;
     max-width: 225px;
     max-height: 250px; }
 
@@ -138,7 +141,7 @@ main {
 
 .theme-switch {
   display: inline-block;
-  height: 20px;
+  height: 18px;
   margin: 8px 0 0;
   position: relative;
   width: 40px; }
@@ -158,9 +161,9 @@ main {
 
 .slider:before {
   background-color: #fff;
-  bottom: 2px;
+  bottom: 1px;
   content: "";
-  height: 18px;
+  height: 17px;
   left: 2px;
   position: absolute;
   transition: .4s;
@@ -170,7 +173,7 @@ input:checked + .slider {
   background-color: #536390; }
 
 input:checked + .slider:before {
-  transform: translateX(26px); }
+  transform: translateX(18px); }
 
 .slider.round {
   border-radius: 34px; }
