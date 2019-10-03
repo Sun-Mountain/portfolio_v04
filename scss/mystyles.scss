@@ -62,7 +62,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    width: 50%;
 
     p {
         margin: 5px 0;
@@ -71,8 +70,8 @@ body {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 25px 0;
 }
 
 .title {
@@ -89,13 +88,19 @@ main {
     border: 1px solid var(--card-border);
     border-radius: 25px;
     display: inline-block;
+    margin: 25px 12px 0;
+
     width: 225px;
 
     .card-description {
         border-radius: 25px 25px 0 0;
         color: #fff;
+        display: flex;
+        flex-direction: column;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
+        height: 200px;
+        justify-content: space-around;
         padding: 10px;
 
         .title {
@@ -114,7 +119,16 @@ main {
         .proj-desc {
             font-size: 12px;
             margin: 12px 12px 0;
+            overflow: hidden;
         }
+    }
+
+    #circuitapp {
+        background-color: #0f223a;
+    }
+
+    #ptflash {
+        background-color: #53B8C0;
     }
 
     #ruby-blog {
@@ -165,6 +179,7 @@ main {
 .theme-switch {
     display: inline-block;
     height: 20px;
+    margin: 8px 0 0;
     position: relative;
     width: 40px;
 }
